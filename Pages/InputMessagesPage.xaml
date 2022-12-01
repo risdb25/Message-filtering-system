@@ -1,0 +1,38 @@
+﻿<Page x:Class="NapierBankApplication.Pages.InputMessagesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NapierBankApplication.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="515" d:DesignWidth="1200"
+      ShowsNavigationUI="False"
+      Title="InputMessagesPage">
+
+    <Grid>
+        <Label Content="NAPIER BANK MESSAGE FILTERING SERVICE" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Bell MT" FontSize="32"/>
+
+        <Label Content="Input your message below" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Label Content="Message Header" HorizontalAlignment="Left" Margin="30,115,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMessageHeader" HorizontalAlignment="Left" Height="23" Margin="30,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Message Body" HorizontalAlignment="Left" Margin="30,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMessageBody"  HorizontalAlignment="Left" Height="186" Margin="30,195,0,0" TextWrapping="Wrap" Text="Sender&#xD;&#xA;Subject (if applicable)&#xD;&#xA;Message body&#xD;&#xA;" VerticalAlignment="Top" Width="356" FontStyle="Italic" SelectionOpacity="0" MouseEnter="txtMessageBody_MouseEnter" MouseLeave="txtMessageBody_MouseLeave" AcceptsReturn="True" IsTabStop="False"/>
+
+        <Label Content="Processed message" HorizontalAlignment="Right" Margin="0,60,30,0" VerticalAlignment="Top" FontSize="30"/>
+        <Label Content="Header" HorizontalAlignment="Right" Margin="0,115,30,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOutputHeader" HorizontalAlignment="Right" Height="23" Margin="0,140,30,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" IsReadOnly="True"/>
+        <Label Content="Sender" HorizontalAlignment="Right" Margin="0,170,30,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOutputSender" HorizontalAlignment="Right" Height="23" Margin="0,195,30,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" IsReadOnly="True"/>
+        <Label Content="Subject" HorizontalAlignment="Right" Margin="0,225,30,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOutputSubject" HorizontalAlignment="Right" Height="23" Margin="0,250,30,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" IsReadOnly="True"/>
+        <Label Content="Message Body" HorizontalAlignment="Right" Margin="0,280,30,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOutputBody" HorizontalAlignment="Right" Height="186" Margin="0,305,30,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="356" IsReadOnly="True"/>
+
+        <Button x:Name="btnSave" Content="SAVE MESSAGE" HorizontalAlignment="Left" Margin="472,300,0,0" VerticalAlignment="Top" Width="96" Click="btnSave_Click" Height="48" Background="LightBlue"/>
+        <Button x:Name="btnClear" Content="Clear boxes" HorizontalAlignment="Left" Margin="30,395,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btnClear_Click"/>
+        
+        <Button x:Name="btnHomePage" Content="Return to Home Page" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="125" Height="30" Click="btnHomePage_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="155,0,0,10" VerticalAlignment="Bottom" Width="60" Height="30" Click="btnExit_Click"/>
+
+    </Grid>
+</Page>
